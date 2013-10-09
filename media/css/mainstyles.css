@@ -1,17 +1,21 @@
 @charset "utf-8";
-body {
+
+#homePage {
 	background: transparent url(../images/piermont_bg.jpg) 0 0 no-repeat fixed !important;
 	background-position: center center;
 	background-attachment: scroll;
 	background-size:cover;
-}
-.ui-page, .ui-content {
-	background: transparent;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 }
 
-
-/* .ui-content {
-	background: transparent url(../images/piermont_bg.jpg) 0 0 no-repeat fixed !important;
-	background-size: cover;
-} */
+#homeHeader {
+	background-color:transparent;
+	background-image:url(../images/henley_logo.jpg);
+	height: 74px;
+	background-repeat: no-repeat;
+	background-position: 5px;
+	border:0;
+}
 
