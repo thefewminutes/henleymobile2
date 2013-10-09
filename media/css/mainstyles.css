@@ -18,4 +18,10 @@
 	background-position: 5px;
 	border:0;
 }
+#search {
+	float:right;
+	margin: 1em 1em;
+	opacity: 0.6;
+	filter:alpha(opacity=60); /* For IE8 and earlier */
+}
 
