@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>Henley Homes</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
 <link rel="stylesheet" type="text/css" href="media/css/mainstyles.css">
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
@@ -12,9 +12,12 @@
 
 <body>
 	<section id="homePage" data-role="page">
-    	<header id="homeHeader" data-role="header" data-position="fixed" style="background-color:transparent">
-        	<span id="search">
-        		<img src="media/images/search_icon.png" width="29" height="29" alt="Search">
+    	<div id="searchpanel">
+    		<input name="searchbox" id="searchbox" value="" placeholder="Search" type="search">
+    	</div><!-- search panel -->
+    	<header id="homeHeader" data-role="header">
+        	<span id="searchTrigger">
+        		<a href="#" id="btn_search"><img src="media/images/search_icon.png" alt="Search"></a>
             </span>
         </header>
         
@@ -27,5 +30,6 @@
         </footer>
 
 	</section><!-- /page -->
+    <script src="media/scripts/homepage.js"></script>
 </body>
 </html>
