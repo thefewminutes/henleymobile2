@@ -1,0 +1,17 @@
+@charset "utf-8";
+body {
+	background: transparent url(../images/piermont_bg.jpg) 0 0 no-repeat fixed !important;
+	background-position: center center;
+	background-attachment: scroll;
+	background-size:cover;
+}
+.ui-page, .ui-content {
+	background: transparent;
+}
+
+
+/* .ui-content {
+	background: transparent url(../images/piermont_bg.jpg) 0 0 no-repeat fixed !important;
+	background-size: cover;
+} */
+
