@@ -12,4 +12,11 @@ $(document).ready(function() {
 		$('#searchCloser').toggle();
 	});
 	
+		$('#navOpen').click(function() {
+			$('#bottomNav').slideDown();
+	//	$('#bottomNav').show();
+		//$('#searchTrigger').toggle();
+		//$('#searchCloser').toggle();
+	});
+	
 });

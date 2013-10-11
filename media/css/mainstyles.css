@@ -1,4 +1,8 @@
 @charset "utf-8";
+body {
+	margin: 0;
+	padding: 0;
+}
 
 body, .ui-page {
 	font-family: 'HelveticaNeueW01-45Ligh' , Sans-Serif;
@@ -81,6 +85,7 @@ Helv Neue 45 = font-family:'HelveticaNeueW01-45Ligh';
 	left: 4.3em;
 	opacity: 0.6;
 	filter:alpha(opacity=60); /* For IE8 and earlier */
+	margin:0;
 }
 
 #pageFooter {
@@ -88,9 +93,11 @@ Helv Neue 45 = font-family:'HelveticaNeueW01-45Ligh';
 	height: 2em;
 	color: #fff;
 	text-align:center;
-	width: 80%;
+	width: 250px;
 	margin: 0 2em 0 2em;
 	padding: 0 0 1em 0;
+	position:absolute;
+	bottom:0;
 }
 #pageFooter h1 {
 	font-variant:small-caps;
@@ -100,10 +107,15 @@ Helv Neue 45 = font-family:'HelveticaNeueW01-45Ligh';
 	margin: 0;
 	padding: 0;
 }
+#pageFooter a {
+	text-decoration:none;
+	color:#fff;
+}
 #bottomNav {
-	margin: 0 2em 0 2em;
+	margin: 0 2em 0 0;
 	padding:0 0 1em 0;
-	width:80%;
+	width:100%;
+	display:none;
 }
 #bottomNav ul {
 	margin:0;
