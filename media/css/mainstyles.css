@@ -1,8 +1,15 @@
 @charset "utf-8";
 
 body, .ui-page {
-	font-family: 'Georgia' , Sans-Serif;
+	font-family: 'HelveticaNeueW01-45Ligh' , Sans-Serif;
 }
+
+/* 
+Avant bold = font-family:'AvantGardeGothicITCW01B 731063';
+Avant book = font-family:'AvantGardeGothicITCW01B 731069';
+Avant medi = font-family:'AvantGardeGothicITCW01M 731087';
+Helv Neue 45 = font-family:'HelveticaNeueW01-45Ligh';
+*/
 
 #homePage {
 	background: transparent url(../images/piermont_bg.jpg) 0 0 no-repeat fixed !important;
