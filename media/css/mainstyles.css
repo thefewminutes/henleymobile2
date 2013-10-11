@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+body, .ui-page {
+	font-family: 'Georgia' , Sans-Serif;
+}
+
 #homePage {
 	background: transparent url(../images/piermont_bg.jpg) 0 0 no-repeat fixed !important;
 	background-position: center center;
@@ -72,7 +76,6 @@
 	filter:alpha(opacity=60); /* For IE8 and earlier */
 }
 
-
 #pageFooter {
 	background-color:#b71234;
 	height: 2em;
@@ -104,6 +107,10 @@
 	margin:0;
 	text-align:left;
 	background-color:white;
+	background-image:url(../images/right-arrow.png);
+	background-repeat: no-repeat;
+	background-position: 90% 50%;
+	border-bottom: solid 1px #b19c83;
 }
 #bottomNav li a {
 	padding:.4em 0 .4em 2em;
@@ -114,5 +121,8 @@
 }
 #bottomNav li a:hover {
 	background-color: #e5dbcf;
+	background-image:url(../images/right_arrow_on.png);
+	background-repeat: no-repeat;
+	background-position: 90% 50%;
 	color:#fff;
 }
