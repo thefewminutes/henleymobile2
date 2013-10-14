@@ -1,11 +1,12 @@
 @charset "utf-8";
+
 body {
 	margin: 0;
 	padding: 0;
 }
 
 body, .ui-page {
-	font-family: 'HelveticaNeueW01-45Ligh' , Sans-Serif;
+	font-family: 'AvantGardeGothicITCW01B 731069' , Sans-Serif;
 }
 .shadow {
 	-moz-box-shadow:    3px 3px 5px 0px #000;
@@ -28,6 +29,7 @@ Helv Neue 45 = font-family:'HelveticaNeueW01-45Ligh';
 
 #homeHeader {
 	background-color:transparent;
+	background-size:contain;
 	background-image:url(../images/henley_logo.jpg);
 	height: 74px;
 	background-repeat: no-repeat;
@@ -131,11 +133,13 @@ Helv Neue 45 = font-family:'HelveticaNeueW01-45Ligh';
 	background-repeat: no-repeat;
 	background-position: 90% 50%;
 	border-bottom: solid 1px #b19c83;
+	line-height:.7em;
 }
 #bottomNav li a {
 	padding:.4em 0 .4em 2em;
 	display:block;
 	text-decoration:none;
+	font-size:.8em;
 	font-weight: normal;
 	color: #b19c83;
 }
