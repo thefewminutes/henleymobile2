@@ -7,6 +7,11 @@ body {
 body, .ui-page {
 	font-family: 'HelveticaNeueW01-45Ligh' , Sans-Serif;
 }
+.shadow {
+	-moz-box-shadow:    3px 3px 5px 0px #000;
+	-webkit-box-shadow: 3px 3px 5px 0px #000;
+	box-shadow:         3px 3px 5px 0px #000;
+}
 
 /* 
 Avant bold = font-family:'AvantGardeGothicITCW01B 731063';
@@ -16,13 +21,9 @@ Helv Neue 45 = font-family:'HelveticaNeueW01-45Ligh';
 */
 
 #homePage {
-	background: transparent url(../images/piermont_bg.jpg) 0 0 no-repeat fixed !important;
-	background-position: center center;
-	background-attachment: scroll;
+	background: transparent url('../images/piermont_bg.jpg') no-repeat;
 	background-size:cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
+	background-position: center center;
 }
 
 #homeHeader {
@@ -50,7 +51,7 @@ Helv Neue 45 = font-family:'HelveticaNeueW01-45Ligh';
 	display:none;
 	float:right;
 	margin: 0 1em 0 0;
-	padding:.2em 2em .4em .4em;
+	padding:.2em 2em .4em 2em;
 	background-color:#000;
 	font-size:.8em;
 	border-bottom-left-radius: 5px;
@@ -63,17 +64,6 @@ Helv Neue 45 = font-family:'HelveticaNeueW01-45Ligh';
 #searchCloser a:hover {
 	color:#fff;
 }
-
-.arrow-up {
-	width: 0;
-	height: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-bottom: 5px solid #ccc;
-	position:absolute;
-	right: 1.5em;
-	top: .7em;
-}
 .arrow-up-rel {
 	width: 0;
 	height: 0;
@@ -81,40 +71,51 @@ Helv Neue 45 = font-family:'HelveticaNeueW01-45Ligh';
 	border-right: 8px solid transparent;
 	border-bottom: 8px solid #fff;
 	position:relative;
-	top: -2.3em;
-	left: 4.3em;
+	top: -.8em;
+	left: .5em;
+	opacity: 0.6;
+	filter:alpha(opacity=60); /* For IE8 and earlier */
+	margin:0;
+}
+.arrow-down-rel {
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 8px solid #fff;
+	position:relative;
+	top: .9em;
+	left: .5em;
 	opacity: 0.6;
 	filter:alpha(opacity=60); /* For IE8 and earlier */
 	margin:0;
 }
 
 #pageFooter {
-	background-color:#b71234;
-	height: 2em;
-	color: #fff;
-	text-align:center;
-	width: 250px;
-	margin: 0 2em 0 2em;
-	padding: 0 0 1em 0;
+	width: 100%;
 	position:absolute;
 	bottom:0;
-}
-#pageFooter h1 {
-	font-variant:small-caps;
-	font-weight:normal;
-	font-size: 1.5em;
-	text-shadow:none;
-	margin: 0;
-	padding: 0;
 }
 #pageFooter a {
 	text-decoration:none;
 	color:#fff;
 }
+#navOpen {
+	width: 200px;
+	margin: 0 auto;
+	padding: 10px;
+	cursor: pointer;
+	text-align: center;
+	font-size: 1.2em;
+	font-variant:small-caps;
+	background-color: #b71234;
+	border-top-left-radius:  5px;
+	border-top-right-radius: 5px;
+}
 #bottomNav {
-	margin: 0 2em 0 0;
-	padding:0 0 1em 0;
-	width:100%;
+	margin: auto;
+	padding:0;
+	width:220px;
 	display:none;
 }
 #bottomNav ul {
